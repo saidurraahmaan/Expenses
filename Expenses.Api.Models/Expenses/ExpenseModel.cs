@@ -4,20 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Expenses.Data.Model
+namespace Expenses.Api.Models.Expenses
 {
-    public class Expense
+    public class ExpenseModel
     {
         public int Id { get; set; }
-
         public DateTime Date { get; set; }
-        public string Description { get; set; } = String.Empty;
+        public string Description { get; set; }
         public decimal Amount { get; set; }
-        public string Comment { get; set; } = String.Empty ;
+        public string Comment { get; set; }
 
         public int UserId { get; set; }
-        public virtual User User { get; set; }
-
-        public bool IsDeleted { get; set; }
+        public string Username { get; set; }
     }
 }

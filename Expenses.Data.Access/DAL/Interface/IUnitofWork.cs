@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Expenses.Data.Access.DAL
+namespace Expenses.Data.Access.DAL.Interface
 {
-    public interface IUnitofWork:IDisposable
+    public interface IUnitofWork : IDisposable
     {
         ITransaction BeginTransaction(IsolationLevel isolationLevel = IsolationLevel.Snapshot);
 
